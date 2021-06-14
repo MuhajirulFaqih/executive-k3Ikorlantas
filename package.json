@@ -1,0 +1,62 @@
+{
+    "name": "executive-korlantas",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "chart.js": "^2.9.4",
+        "core-js": "^3.6.5",
+        "date-fns": "^2.21.1",
+        "jquery": "^3.6.0",
+        "phosphor-vue": "^1.2.1",
+        "sass": "^1.32.11",
+        "sass-loader": "^10.1.1",
+        "serve": "^11.3.2",
+        "vue": "^2.6.11",
+        "vue-router": "^3.5.1",
+        "vue2-datepicker": "^3.9.0",
+        "vue2-perfect-scrollbar": "^1.5.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": false,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "globals": {
+            "todoEventBus": "readable"
+        },
+        "rules": {
+            "no-mixed-spaces-and-tabs": 0,
+            "no-undef": 0,
+            "no-unused-vars": 0
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

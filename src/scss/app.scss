@@ -1,0 +1,79 @@
+@import '~bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import '~vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css';
+@import '_variables.scss';
+@import '_main.scss';
+
+:root { font-size: 16px; }
+
+body {
+    font-family: $fontBody;
+    color: $content;
+}
+
+* {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+//Password
+.e-password {
+    > div { position: relative }
+    .phospor {
+        position: absolute;
+        top: 0.3em;
+        right: 0.55em;
+        font-size: 1.5em;
+        user-select: none;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+a { outline: none !important; }
+a:hover { 
+    text-decoration: none; 
+}
+
+div { word-wrap: break-word; }
+.semi-bold { font-weight: 600; }
+
+h1 { font-size: 3.5rem !important }
+h2 { font-size: 2.5rem !important }
+h3 { font-size: 1.8rem !important }
+h4 { font-size: 1.3rem !important }
+h5 { font-size: 1.2rem !important }
+h6 { font-size: 1rem !important }
+hr { border-top: 1px solid rgb(60 68 80) !important; }
+.h-100vh { height: 100vh; }
+
+//Scrollable
+.ps__thumb-y {
+    background-color: $blue;
+}
+.ps__rail-y {
+    opacity: .3;
+    background: rgba(255, 255, 255, 0) !important;
+    &:hover, &:focus, &.ps--clicking {
+        .ps__thumb-y {
+            width: 6px;
+            background-color: $blue;
+        }
+    }
+}
+
+
+.header {
+    font-family: $fontHeader;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.font-header { font-family: $fontHeader; }
+.font-body { font-family: $fontBody; }
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }
+.strtoupper { text-transform: uppercase; }
