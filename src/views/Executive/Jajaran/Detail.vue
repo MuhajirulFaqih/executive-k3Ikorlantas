@@ -346,6 +346,7 @@
                             <b-row>
                                 <b-col cols="12" lg="4" offset-lg="4">
                                     <img src="/assets/dummy/polda-jatim.png" class="w-100" alt="">
+                                    <div class="text-center my-3"><b-button @click="blackspot" variant="primary">Blackspot Laka</b-button></div>
                                 </b-col>
                             </b-row>
                         </b-col>
@@ -413,6 +414,12 @@ export default {
         getBulan (tanggal) {
             return format(parseISO(formatISO(tanggal)), 'MMMM', {locale: id})
         },
+        blackspot () {
+            let a= document.createElement('a')
+            a.target= '_blank'
+            a.href= '/assets/dummy/blackspot.png'
+            a.click()
+        }
     },
 }
 </script>
